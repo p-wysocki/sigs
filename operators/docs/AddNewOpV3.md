@@ -31,7 +31,7 @@ In order to propose a new operator/function, the following is needed:
 1. If the operator can be composed by other ONNX operators, then it should be a function and not an operator.
 2. If the operator can be split to new primitives, propose those primitives instead and make the operator a function.
 3. The operator should be based on a popular model architecture to validate that this operator solves an actual problem. In case, the model is private or IP and can't be shared, the operator doesn't belong to the standard and should be implemented as custom OP.
-4. The operator should be implemented by at-least one (well-known) framewor to validate the actual behavior of the operator and its usage.
+4. The operator should be implemented by at-least one (well-known) framework to validate the actual behavior of the operator and its usage.
 5. Operator signature and behavior:
     1. If the operator is available in numpy, prefer numpy semantics.
     2. If the operator is available in more than one frameworks, make sure that your design is general and covers those frameworks.
